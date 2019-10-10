@@ -1,0 +1,37 @@
+.mainpage{
+    ion-toolbar {
+        --background-color:  $item-md-sliding-content-background(transprent);        ;
+        --ion-color-base: transparent !important;
+        }
+        .tool{
+            --background:rgba(255,255,255, 0) ;
+            color: white;
+        }
+        .spaceTitle{
+            margin: 15px 0px;
+        }
+        .colBlack{
+            color:black
+        }
+        .display-inline{
+            display: inline;
+        }
+       .iconAdd{
+            color:#d5d5d5
+        }
+        .fixedBottom{
+            position: fixed;
+            bottom: 0;
+            background-color: #fd6768;
+            height: 50px;
+            width: 100%;
+        }
+        .sortingbutton{
+            width: 50%;
+            background-color: #fd6768;
+            color: white;
+            margin-top: 16px;
+        }       
+}
+
+    

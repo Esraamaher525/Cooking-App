@@ -1,0 +1,43 @@
+<ion-header>
+</ion-header>
+  
+  <ion-content fullscreen class="mainpage">
+      <ion-toolbar slot="fixed" class="tool">
+          <ion-title>
+                <ion-icon name="arrow-round-back" routerLink="/home"></ion-icon>
+                <ion-icon name="cart" class="ion-float-right" ></ion-icon>
+                <ion-icon name="search" class="ion-float-right"></ion-icon>
+          </ion-title>
+        </ion-toolbar>
+      <ion-img [src]="productCategory.category_img" ></ion-img>
+      <ion-title class="ion-text-center ion-text-capitalize spaceTitle">{{productCategory.name}}</ion-title>
+      <!-- list items -->
+      <div class="ion-padding" *ngFor="let item of  productCategory.products">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                          <ion-card id={{item.id}} (click)="productDetails(item.id)" [routerLink]="['/product-details', item.id]" >
+                              <ion-card-header>
+                                <ion-img [src]=item.product_img></ion-img>
+                                <ion-card-title><h2 class="colBlack ion-text-capitalize">{{item.name}}</h2></ion-card-title>
+                              </ion-card-header>
+                            
+                              <ion-card-content>
+                                <div class="colBlack ion-text-capitalize"><h4>{{item.weight}}</h4></div>
+                                <div class="colBlack ion-text-capitalize"><h4>{{item.price}}<ion-icon name="add-circle" class="ion-float-right iconAdd"></ion-icon></h4>
+                                </div>
+                              </ion-card-content>
+                            </ion-card>
+                  </ion-col>
+              </ion-row>
+            </ion-grid>
+       
+          </div>
+          <!-- sorting and filter -->
+          <div class="fixedBottom">
+              <button class="ion-text-capitalize sortingbutton">sort by</button>
+              <button class="ion-text-capitalize sortingbutton">filter</button>
+           </div>
+         
+  </ion-content>
+ 

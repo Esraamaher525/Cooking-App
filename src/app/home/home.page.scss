@@ -1,1 +1,74 @@
+.my-custom-menu {
+  --width: 500px;
+  --height:300px
+}
+.homeStyle{
+  .spaceIcon{
+    margin-right: 20px;
+  }
+  //slider
+  .slide1{
+    background-image: url('../../assets/img/home/slider.jpg');
+    background-position-y: -29px;
+  }
+  .slide2{
+    background-image: url('../../assets/img/home/slider3.jpg');
+  }
+  .slide3{
+    background-image: url('../../assets/img/home/slider2.jpg');
+  }
+  .slide4{
+    background-image: url('../../assets/img/home/slide1.jpg');
+    background-position-y: -90px;
+    background-position-x: -5px;
+  }
+  .imgbg{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+  }
+  ion-slides {
+    --bullet-background-active: #ffffff;
+  }
+  // section 2
+  .imgGrocery{
+    background-image: url('../../assets/img/home/grocery.jpg');
+  }
+  .imggher{
+    background-image: url('../../assets/img/home/gher.jpg');
+  }
+  .imgVeg{
+    background-image: url('../../assets/img/home/veg.jpg');
+  }
+  .colWhite{
+    color: white
+  }
+  .wrap{
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .flex{
+    display: flex
+  }
+  //end section two
 
+  //start section four
+  .img1{
+    background-image: url('../../assets/img/home/img1.jpg');
+  }
+  .img2{
+    background-image: url('../../assets/img/home/pann.jpg');
+  }
+  // end section four
+  .textStyle{
+    width: 40%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  
+
+
+}

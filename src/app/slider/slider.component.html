@@ -1,0 +1,81 @@
+<!-- splash -->
+<div id="custom-overlay" class="splashPart" [style.dislay]="splash ? 'flex' : 'none'">
+  <div class="flex text-center spaceTop">
+    <div class="Aligner-item Aligher-item--top">
+      <img src="../../assets/img/logo.jpg" class="displarBlock marauto">
+        <svg height="100" width="100">
+            <!-- <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="none" /> -->
+            <!-- circle  -->
+            <circle cx="90" cy="47" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="85" cy="70" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="70" cy="85" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="48" cy="90" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="25" cy="80" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="12" cy="60" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="12" cy="35" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="30" cy="16" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="55" cy="11" r="5" stroke="white" stroke-width="1" fill="none" />
+            <circle cx="80" cy="25" r="5" stroke="white" stroke-width="1" fill="none" />
+          <!-- circle transform -->
+             <circle cx="90" cy="47" r="5" stroke="white" stroke-width="1" fill="white">
+                     <animateTransform 
+                      attributeName="transform"
+                      dur="5s"
+                      type="translate" 
+                      values='0 0 ; -5 22;-25 39.9; -44 42;-63 32;-78 15;-75 -20;-60 -30;-30 -40;-10 -20;0 0'	
+                      repeatCount="indefinite"
+                      begin="0.1s" />
+                      
+              
+             </circle>
+          </svg>
+    </div>
+  </div>
+</div> 
+
+<ion-content class="slider" >
+    <ion-slides pager="true" effect="overflow">
+        <ion-slide>
+            <ion-card>
+                <ion-card-header>
+                  <ion-img src="../../assets/img/slider/slide1.png"></ion-img>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-card-title>Lorem Ipsum</ion-card-title>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+           
+        </ion-slide>
+        <ion-slide>
+            <ion-card>
+                <ion-card-header>
+                  <ion-img src="../../assets/img/slider/slide2.png"></ion-img>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-card-title>Lorem Ipsum</ion-card-title>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+           
+        </ion-slide>
+        <ion-slide routerLink="/home">
+            <ion-card>
+                <ion-card-header>
+                  <ion-img src="../../assets/img/slider/slide3.png"></ion-img>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-card-title>Lorem Ipsum</ion-card-title>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+           
+        </ion-slide>
+      </ion-slides>
+</ion-content>

@@ -1,0 +1,38 @@
+.splashPart{
+    background-color: #fd6768;
+    height: -webkit-fill-available;
+    .displarBlock{
+        display: block;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .spaceTop{
+        padding-top: 190px;
+    }
+    .marauto{
+        margin: 0 auto;
+    }
+}
+.slider{
+    display: none;
+    ion-card{
+        border-style: none;
+        box-shadow: none
+    }
+    ion-slides{
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+    ion-slides {
+        --bullet-background-active:#ee4747;
+      }
+      svg{
+        display: block;
+        margin: 0 auto;
+        margin-top: 250px;
+    }
+    
+    
+
+}

@@ -1,14 +1,55 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+   <ion-toolbar>
+      <ion-title>
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="cart" class="ion-float-right" ></ion-icon>
+        <ion-icon name="search" class="ion-text-right ion-float-right"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="homeStyle">
+    <!--- start slider --->
+   <ion-slides pager="true">
+     <ion-slide><div class="slide1 imgbg"></div></ion-slide>
+     <ion-slide><div class="slide2 imgbg"></div></ion-slide>
+     <ion-slide><div class="slide3 imgbg"></div></ion-slide>
+     <ion-slide><div class="slide4 imgbg"></div></ion-slide>
+   </ion-slides>
+   <!--- end slider --->
+   <!-- start section two -->
+   <ion-grid>
+      <ion-row>
+          <ion-col name="Seafood" (click)="goTovegetablesProduct('Seafood')">
+              <div  class="imgGrocery imgbg flex"><span class="ion-text-capitalize colWhite wrap">grocery</span></div>
+          </ion-col>
+          <ion-col name="vegetables" (click)="goTovegetablesProduct('Vegetables')">
+              <div  class="imgVeg imgbg flex"><span class="ion-text-capitalize colWhite wrap">vegetables</span></div>
+          </ion-col>
+      </ion-row>
+   </ion-grid>
+   <!-- end section two -->
+   <!-- start section three -->
+   <ion-grid>
+      <ion-row>
+            <div  class="imggher imgbg flex"><div class="ion-text-capitalize textStyle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+            </div>
+      </ion-row>
+   </ion-grid>
+   <!--end section three-->
+   <!-- start section two -->
+   <ion-grid>
+      <ion-row>
+          <ion-col name="fruits" (click)="goTovegetablesProduct('Fruits')">
+              <div  class="img1 imgbg flex"></div>
+          </ion-col>
+          <ion-col name="Meats" (click)="goTovegetablesProduct('Meats')">
+              <div  class="img2 imgbg flex"></div>
+          </ion-col>
+      </ion-row>
+   </ion-grid>
+   <!-- end section two -->
+  
+  
+  </ion-content>
+  
